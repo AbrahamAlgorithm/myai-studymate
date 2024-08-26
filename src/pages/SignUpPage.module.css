@@ -1,0 +1,195 @@
+/* src/pages/SignUpPage.module.css */
+.signUpContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+.signUpBox {
+  display: flex;
+  width: 700px; /* Reduced width */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signUpLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #287BFF;
+  border-radius: 10px;
+}
+
+
+.signUpLogo {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  padding: 10px;
+}
+
+
+.signUpRight {
+  flex: 1;
+  padding: 30px;
+}
+
+.signUpTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 40.32px;
+  color: #010220;
+}
+
+.Paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #287BFF;
+  margin-bottom: 15px;
+}
+
+.InputText {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 18px;
+  text-align: left;
+  color: #010220;
+  margin-bottom: 5px;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUpInput {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 3px solid #465A83;
+  border-radius: 16px;
+  width: Fixed (439px);
+}
+
+.signUpInputHalf {
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 15px; /* Reduced margin */
+  border: 3px solid #465A83;
+  border-radius: 16px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.signUpInputRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.signUpButton {
+  padding: 10px;
+  background-color: #287BFF;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.signUpButton:hover {
+  background-color: #0056b3;
+}
+
+.signUpText {
+  font-size: 12px;
+  color: #555;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signUpTexts {
+  font-size: 14px;
+  color: #100f0f;
+  text-align: center;
+  padding-bottom: 15px;
+  font: bold;
+}
+
+.signUpLink {
+  color: #010220;
+  text-decoration: none;
+}
+
+.signUpLink:hover {
+  text-decoration: underline;
+}
+
+.Terms {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 15.12px;
+  text-align: center;
+  color: #287BFF;
+  padding: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1050px) {
+  .signUpBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signUpLeft {
+    display: none;
+  }
+
+  .signUpRight {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .signUpContainer {
+    padding: 10px; /* Reduced padding */
+  }
+
+  .signUpBox {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .signUpRight {
+    padding: 15px; /* Reduced padding */
+  }
+}
+
+@media (max-width: 500px) {
+  .signUpInput {
+    font-size: 12px; /* Reduced font size */
+  }
+
+  .signUpButton {
+    font-size: 12px; /* Reduced font size */
+  }
+
+  .signUpText {
+    font-size: 10px; /* Reduced font size */
+  }
+}

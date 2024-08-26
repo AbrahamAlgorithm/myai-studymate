@@ -1,0 +1,169 @@
+/* src/pages/SignInPage.module.css */
+.signInContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.signInBox {
+  display: flex;
+  width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signInLeft {
+  flex: 1;
+  padding: 30px;
+}
+
+.signInRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.signInTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 40.32px;
+  color: #010220;
+  padding-top: 40px;
+}
+
+.Paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.16px;
+  text-align: center;
+  color:#287BFF;
+  padding-bottom: 15px;
+}
+
+.signInForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.signInInput {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 3px solid #465A83;
+  border-radius: 16px;
+  width: Fixed (439px);
+}
+
+.signInButton {
+  padding: 10px;
+  background-color: #287BFF;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.signInButton:hover {
+  background-color: #0056b3;
+}
+
+.signInText {
+  font-size: 14px;
+  color: #555;
+  text-align: right;
+  padding-bottom: 15px;
+}
+
+.signInTexts {
+  font-size: 14px;
+  color: #100f0f;
+  text-align: center;
+  padding-bottom: 15px;
+  font: bold;
+}
+
+.signInLink {
+  text-decoration: none;
+  color: #010220;
+}
+
+.signInLink:hover {
+  text-decoration: underline;
+}
+
+.InputText {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20.16px;
+  text-align: left;
+  color: #010220;
+  padding-bottom: 5px;
+}
+
+.Terms {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 15.12px;
+  text-align: center;
+  color: #287BFF;
+  padding: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1050px) {
+  .signInBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signInRight {
+    display: none;
+  }
+
+  .signInLeft {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .signInContainer {
+    padding: 10px; /* Reduced padding */
+  }
+
+  .signInBox {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .signInLeft {
+    padding: 15px; /* Reduced padding */
+  }
+}
+
+@media (max-width: 500px) {
+  .signInInput {
+    font-size: 12px; /* Reduced font size */
+  }
+
+  .signInButton {
+    font-size: 12px; /* Reduced font size */
+  }
+
+  .signInText {
+    font-size: 10px; /* Reduced font size */
+  }
+}
